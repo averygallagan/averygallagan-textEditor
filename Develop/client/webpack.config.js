@@ -24,7 +24,7 @@ module.exports = () => {
       }),
 
       new InjectManifest({
-        swSrc: './client/src-sw.js',
+        swSrc: path.resolve(__dirname, 'client/src-sw.js'),
         swDest: 'src-sw.js',
       }),
 
